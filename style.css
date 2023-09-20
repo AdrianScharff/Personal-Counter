@@ -69,6 +69,8 @@ body {
         border: none;
         border: 10px solid black;
         align-items: center;
+        padding: 10px;
+        transform: scale(0.9);
     }
 
     .section-center span {
@@ -76,6 +78,14 @@ body {
         align-items: center;
         font-size: 37px;
     }
+
+    .section-center p .num {
+        font-size: 50px;
+        margin: 0;
+        display: block;
+        padding: 0;
+    }
+
     .section-center .units {
         width: 70px;
         font-size: 15px;
@@ -93,8 +103,9 @@ body {
         font-size: 23px;
     }
 
-    .section-center span {
-        font-size: 45px;
+    .section-center .units {
+        width: 85px;
+        font-size: 20px;
     }
 }
 
@@ -104,7 +115,7 @@ body {
         width: 10rem;
         font-size: 30px;
     }
-    .section-center span {
+    /* .section-center .units {
         font-size: 60px;
-    }
+    } */
 }
