@@ -1,4 +1,4 @@
-const items = document.querySelectorAll('p span');
+const items = document.querySelectorAll('p .num');
 console.log(items);
 const startDate = new Date(2023, 7, 5, 18, 33, 33);
 

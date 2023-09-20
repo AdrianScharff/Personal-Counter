@@ -27,6 +27,7 @@ body {
 }
 
 .section-center p {
+    font-size: 30px;
     border: 5px solid black;
     padding: 1rem;
     display: flex;
@@ -36,31 +37,74 @@ body {
     background-color: rgb(255, 255, 255);
     text-transform: capitalize;
     width: 15rem;
+    color: rgb(122, 122, 122);
 }
 
-@media screen and (max-width: 1000px) {
-    body {
-        font-size: 15px;
-    }
+.section-center .num {
+    font-size: 60px;
+    color: black;
+}
 
+.section-center .units {
+    font-size: 30px;
+    color: white;
+    background-color: rgb(92, 92, 92);
+    display: flex;
+    justify-content: center;
+    padding: 2px 0;
+    width: 120px;
+}
+
+@media screen and (max-width: 700px) {
     .section-center {
         flex-direction: column;
         gap: 3rem;
     }
 
     .section-center p {
+        font-size: 20px;
         display: flex;
         flex-direction: column;
-        width: 5rem;
+        width: 7rem;
+        border: none;
+        border: 10px solid black;
+        align-items: center;
     }
+
     .section-center span {
         justify-content: center;
         align-items: center;
-        font-size: 40px;
+        font-size: 37px;
+    }
+    .section-center .units {
+        width: 70px;
+        font-size: 15px;
+        padding: 2px 0;
     }
 }
-@media screen and (max-width: 1505px) {
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .section-center {
+        gap: 3rem;
+    }
+
+    .section-center p {
+        width: 7rem;
+        font-size: 23px;
+    }
+
+    .section-center span {
+        font-size: 45px;
+    }
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1505px) {
     .section-center p {
         width: 10rem;
+        font-size: 30px;
+    }
+    .section-center span {
+        font-size: 60px;
     }
 }
