@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Skranji', cursive;
+    font-size: 50px;
+    color: black;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./wth.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.section-center p {
+    border: 5px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    width: 15rem;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 15px;
+    }
+
+    .section-center {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .section-center p {
+        display: flex;
+        flex-direction: column;
+        width: 5rem;
+    }
+    .section-center span {
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1505px) {
+    .section-center p {
+        width: 10rem;
+    }
+}
