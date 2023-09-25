@@ -1,8 +1,4 @@
-const items = document.querySelectorAll('p .num');
-console.log(items);
-const startDate = new Date(2023, 7, 5, 18, 33, 33);
-
-function getCurrentStreak() {
+const getCurrentStreak = (units, startDate) => {
     const startTime = startDate.getTime();
     const currentTime = new Date().getTime();
 
@@ -20,9 +16,33 @@ function getCurrentStreak() {
 
     const values = [days, hours, minutes, seconds];
 
-    items.forEach(function(item, index) {
-        item.innerHTML = values[index];
+    const setValue = (value) => {
+        if (value < 10) {
+            return `0${value}`
+        }
+        return value;
+    }
+
+    units.forEach((item, index) => {
+        item.innerHTML = setValue(values[index]);
     });
 }
 
-setInterval(getCurrentStreak, 1000);
+
+// NoFap
+const itemsNf = document.querySelectorAll('p .num-nf');
+console.log(itemsNf);
+const startDateNf = new Date(2023, 7, 5, 18, 33, 33);
+
+setInterval(() => {
+    getCurrentStreak(itemsNf, startDateNf)
+}, 1000);
+
+
+// Semen Retention
+const itemsSr = document.querySelectorAll('p .num-sr');
+const startDateSr = new Date(2023, 8, 24, 14, 10, 23);
+
+setInterval(() => {
+    getCurrentStreak(itemsSr, startDateSr)
+}, 1000);
