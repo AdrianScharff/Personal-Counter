@@ -41,7 +41,7 @@ setInterval(() => {
 
 // Semen Retention
 const itemsSr = document.querySelectorAll('p .num-sr');
-const startDateSr = new Date(2023, 3, 20, 21, 33, 33);
+const startDateSr = new Date(2023, 11, 20, 21, 33, 33);
 
 setInterval(() => {
     getCurrentStreak(itemsSr, startDateSr)
